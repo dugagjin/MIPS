@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<generated_project xmlns="http://www.xilinx.com/XMLSchema" xmlns:xil_pn="http://www.xilinx.com/XMLSchema">
+
+  <!--                                                          -->
+
+  <!--             For tool use only. Do not edit.              -->
+
+  <!--                                                          -->
+
+  <!-- ProjectNavigator created generated project file.         -->
+
+  <!-- For use in tracking generated file and other information -->
+
+  <!-- allowing preservation of process status.                 -->
+
+  <!--                                                          -->
+
+  <!-- Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved. -->
+
+  <version xmlns="http://www.xilinx.com/XMLSchema">11.1</version>
+
+  <sourceproject xmlns="http://www.xilinx.com/XMLSchema" xil_pn:fileType="FILE_XISE" xil_pn:name="mips.xise"/>
+
+  <files xmlns="http://www.xilinx.com/XMLSchema">
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="Imem.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="Imem.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="Imem.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="Imem.ngr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Imem.prj"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="Imem.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="Imem.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="Imem.xst"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="Imem_envsettings.html"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="Imem_summary.html"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="Imem_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="MIPSTopLevel.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="MIPSTopLevel.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="MIPSTopLevel.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="MIPSTopLevel.ngr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="MIPSTopLevel.prj"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="MIPSTopLevel.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="MIPSTopLevel.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="MIPSTopLevel.xst"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="MIPSTopLevel_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="PC.prj"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="PC.stx"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="PC.xst"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="PCadder.prj"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="PCadder.stx"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="PCadder.xst"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/xst.xmsgs"/>
+    <file xil_pn:fileType="FILE_LOG" xil_pn:name="fuse.log"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="imem_tb_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="isim"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_CMD" xil_pn:name="isim.cmd"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_LOG" xil_pn:name="isim.log"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="pc4_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="pcTtest_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="pcTtest_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="pcTtest_isim_beh.wdb"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="pcTtest_stx_beh.prj"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="webtalk_pn.xml"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_INI" xil_pn:name="xilinxsim.ini"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xst"/>
+  </files>
+
+  <transforms xmlns="http://www.xilinx.com/XMLSchema">
+    <transform xil_pn:end_ts="1476776782" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1476776782">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1477382529" xil_pn:in_ck="-1898606194239329162" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1477382529">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="Imem.vhd"/>
+      <outfile xil_pn:name="MIPSTopLevel.vhd"/>
+      <outfile xil_pn:name="PC.vhd"/>
+      <outfile xil_pn:name="PCadder.vhd"/>
+      <outfile xil_pn:name="imem_tb.vhd"/>
+      <outfile xil_pn:name="mipstoplevel_tb.vhd"/>
+      <outfile xil_pn:name="pc4.vhd"/>
+      <outfile xil_pn:name="pcTtest.vhd"/>
+    </transform>
+    <transform xil_pn:end_ts="1477339321" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="1770003251369860317" xil_pn:start_ts="1477339321">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1477339321" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-450426576576885925" xil_pn:start_ts="1477339321">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1477382119" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="-7081392083538054379" xil_pn:start_ts="1477382119">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1477382529" xil_pn:in_ck="-1898606194239329162" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1477382529">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="Imem.vhd"/>
+      <outfile xil_pn:name="MIPSTopLevel.vhd"/>
+      <outfile xil_pn:name="PC.vhd"/>
+      <outfile xil_pn:name="PCadder.vhd"/>
+      <outfile xil_pn:name="imem_tb.vhd"/>
+      <outfile xil_pn:name="mipstoplevel_tb.vhd"/>
+      <outfile xil_pn:name="pc4.vhd"/>
+      <outfile xil_pn:name="pcTtest.vhd"/>
+    </transform>
+    <transform xil_pn:end_ts="1477382530" xil_pn:in_ck="-1898606194239329162" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-1267576427515509318" xil_pn:start_ts="1477382529">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="fuse.log"/>
+      <outfile xil_pn:name="isim"/>
+      <outfile xil_pn:name="isim.log"/>
+      <outfile xil_pn:name="pcTtest_beh.prj"/>
+      <outfile xil_pn:name="pcTtest_isim_beh.exe"/>
+      <outfile xil_pn:name="xilinxsim.ini"/>
+    </transform>
+    <transform xil_pn:end_ts="1477383219" xil_pn:in_ck="6576410252891383224" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-134815337832875257" xil_pn:start_ts="1477383219">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <outfile xil_pn:name="isim.cmd"/>
+      <outfile xil_pn:name="isim.log"/>
+      <outfile xil_pn:name="pcTtest_isim_beh.wdb"/>
+    </transform>
+    <transform xil_pn:end_ts="1476775903" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1476775903">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1477381479" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="7993226106268056453" xil_pn:start_ts="1477381479">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1477381479" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="-7081392083538054379" xil_pn:start_ts="1477381479">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1476775903" xil_pn:name="TRAN_SubProjectAbstractToPreProxy" xil_pn:start_ts="1476775903">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1477381479" xil_pn:name="TRAN_xawsTohdl" xil_pn:prop_ck="825003459649382919" xil_pn:start_ts="1477381479">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1476775903" xil_pn:name="TRAN_SubProjectPreToStructuralProxy" xil_pn:prop_ck="250970745955965653" xil_pn:start_ts="1476775903">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1477381479" xil_pn:name="TRAN_platgen" xil_pn:prop_ck="5921081488407823711" xil_pn:start_ts="1477381479">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1477381485" xil_pn:in_ck="-5447202611965104622" xil_pn:name="TRANEXT_xstsynthesize_spartan6" xil_pn:prop_ck="207760696021776046" xil_pn:start_ts="1477381479">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="Imem.ngr"/>
+      <outfile xil_pn:name="MIPSTopLevel.lso"/>
+      <outfile xil_pn:name="MIPSTopLevel.ngc"/>
+      <outfile xil_pn:name="MIPSTopLevel.ngr"/>
+      <outfile xil_pn:name="MIPSTopLevel.prj"/>
+      <outfile xil_pn:name="MIPSTopLevel.stx"/>
+      <outfile xil_pn:name="MIPSTopLevel.syr"/>
+      <outfile xil_pn:name="MIPSTopLevel.xst"/>
+      <outfile xil_pn:name="MIPSTopLevel_xst.xrpt"/>
+      <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
+      <outfile xil_pn:name="webtalk_pn.xml"/>
+      <outfile xil_pn:name="xst"/>
+    </transform>
+  </transforms>
+
+</generated_project>

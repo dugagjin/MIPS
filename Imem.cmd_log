@@ -1,0 +1,4 @@
+xst -intstyle ise -ifn "/home/zwakrim/Documents/computerarch/mips/Imem.xst" -ofn "/home/zwakrim/Documents/computerarch/mips/Imem.syr" 
+xst -intstyle ise -ifn "/home/zwakrim/Documents/computerarch/mips/Imem.xst" -ofn "/home/zwakrim/Documents/computerarch/mips/Imem.syr" 
+xst -intstyle ise -ifn "/home/zwakrim/Documents/computerarch/mips/Imem.xst" -ofn "/home/zwakrim/Documents/computerarch/mips/Imem.syr" 
+xst -intstyle ise -ifn "/home/zwakrim/Documents/computerarch/mips/Imem.xst" -ofn "/home/zwakrim/Documents/computerarch/mips/Imem.syr" 

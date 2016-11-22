@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "secureip" -o "/home/zwakrim/Documents/computerarch/mips/pcTtest_isim_beh.exe" -prj "/home/zwakrim/Documents/computerarch/mips/pcTtest_beh.prj" "work.pcTtest" 

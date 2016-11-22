@@ -1,0 +1,4 @@
+work	"Imem.vhd"
+work	"MIPSTopLevel.vhd"
+work	"PC.vhd"
+work	"PCadder.vhd"

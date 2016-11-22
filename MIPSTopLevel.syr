@@ -1,0 +1,551 @@
+Release 14.7 - xst P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> 
+Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.04 secs
+ 
+--> 
+Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.04 secs
+ 
+--> 
+Reading design: MIPSTopLevel.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "MIPSTopLevel.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "MIPSTopLevel"
+Output Format                      : NGC
+Target Device                      : xc6slx9-3-tqg144
+
+---- Source Options
+Top Module Name                    : MIPSTopLevel
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "/home/zwakrim/Documents/computerarch/mips/PCadder.vhd" into library work
+Parsing entity <PCadder>.
+Parsing architecture <Behavioral> of entity <pcadder>.
+Parsing VHDL file "/home/zwakrim/Documents/computerarch/mips/PC.vhd" into library work
+Parsing entity <PC>.
+Parsing architecture <Behavioral> of entity <pc>.
+Parsing VHDL file "/home/zwakrim/Documents/computerarch/mips/Imem.vhd" into library work
+Parsing entity <Imem>.
+Parsing architecture <Behavioral> of entity <imem>.
+Parsing VHDL file "/home/zwakrim/Documents/computerarch/mips/MIPSTopLevel.vhd" into library work
+Parsing entity <MIPSTopLevel>.
+Parsing architecture <Behavioral> of entity <mipstoplevel>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <MIPSTopLevel> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <PCadder> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <Imem> (architecture <Behavioral>) from library <work>.
+WARNING:HDLCompiler:634 - "/home/zwakrim/Documents/computerarch/mips/Imem.vhd" Line 38: Net <memproc.memory[8][31]> does not have a driver.
+
+Elaborating entity <PC> (architecture <Behavioral>) from library <work>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <MIPSTopLevel>.
+    Related source file is "/home/zwakrim/Documents/computerarch/mips/MIPSTopLevel.vhd".
+    Summary:
+	no macro.
+Unit <MIPSTopLevel> synthesized.
+
+Synthesizing Unit <PCadder>.
+    Related source file is "/home/zwakrim/Documents/computerarch/mips/PCadder.vhd".
+WARNING:Xst:647 - Input <PCin<31:31>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 32-bit register for signal <PCout>.
+    Found 32-bit adder for signal <n0005> created at line 40.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  32 D-type flip-flop(s).
+Unit <PCadder> synthesized.
+
+Synthesizing Unit <Imem>.
+    Related source file is "/home/zwakrim/Documents/computerarch/mips/Imem.vhd".
+WARNING:Xst:647 - Input <addr<1:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <addr<31:7>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:2935 - Signal 'memproc.memory<8>', unconnected in block 'Imem', is tied to its initial value (00000000000000000000000000000000).
+WARNING:Xst:2935 - Signal 'memproc.memory<9>', unconnected in block 'Imem', is tied to its initial value (00000000000000000000000000000000).
+WARNING:Xst:2935 - Signal 'memproc.memory<10>', unconnected in block 'Imem', is tied to its initial value (00000000000000000000000000000000).
+WARNING:Xst:2935 - Signal 'memproc.memory<11>', unconnected in block 'Imem', is tied to its initial value (00000000000000000000000000000000).
+WARNING:Xst:2935 - Signal 'memproc.memory<12>', unconnected in block 'Imem', is tied to its initial value (00000000000000000000000000000000).
+WARNING:Xst:2935 - Signal 'memproc.memory<13>', unconnected in block 'Imem', is tied to its initial value (00000000000000000000000000000000).
+WARNING:Xst:2935 - Signal 'memproc.memory<14>', unconnected in block 'Imem', is tied to its initial value (00000000000000000000000000000000).
+WARNING:Xst:2935 - Signal 'memproc.memory<15>', unconnected in block 'Imem', is tied to its initial value (00000000000000000000000000000000).
+WARNING:Xst:2935 - Signal 'memproc.memory<16>', unconnected in block 'Imem', is tied to its initial value (00000000000000000000000000000000).
+WARNING:Xst:2935 - Signal 'memproc.memory<17>', unconnected in block 'Imem', is tied to its initial value (00000000000000000000000000000000).
+WARNING:Xst:2935 - Signal 'memproc.memory<18>', unconnected in block 'Imem', is tied to its initial value (00000000000000000000000000000000).
+WARNING:Xst:2935 - Signal 'memproc.memory<19>', unconnected in block 'Imem', is tied to its initial value (00000000000000000000000000000000).
+WARNING:Xst:2935 - Signal 'memproc.memory<20>', unconnected in block 'Imem', is tied to its initial value (00000000000000000000000000000000).
+WARNING:Xst:2935 - Signal 'memproc.memory<21>', unconnected in block 'Imem', is tied to its initial value (00000000000000000000000000000000).
+WARNING:Xst:2935 - Signal 'memproc.memory<22>', unconnected in block 'Imem', is tied to its initial value (00000000000000000000000000000000).
+WARNING:Xst:2935 - Signal 'memproc.memory<23>', unconnected in block 'Imem', is tied to its initial value (00000000000000000000000000000000).
+WARNING:Xst:2935 - Signal 'memproc.memory<24>', unconnected in block 'Imem', is tied to its initial value (00000000000000000000000000000000).
+WARNING:Xst:2935 - Signal 'memproc.memory<25>', unconnected in block 'Imem', is tied to its initial value (00000000000000000000000000000000).
+WARNING:Xst:2935 - Signal 'memproc.memory<26>', unconnected in block 'Imem', is tied to its initial value (00000000000000000000000000000000).
+WARNING:Xst:2935 - Signal 'memproc.memory<27>', unconnected in block 'Imem', is tied to its initial value (00000000000000000000000000000000).
+WARNING:Xst:2935 - Signal 'memproc.memory<28>', unconnected in block 'Imem', is tied to its initial value (00000000000000000000000000000000).
+WARNING:Xst:2935 - Signal 'memproc.memory<29>', unconnected in block 'Imem', is tied to its initial value (00000000000000000000000000000000).
+WARNING:Xst:2935 - Signal 'memproc.memory<30>', unconnected in block 'Imem', is tied to its initial value (00000000000000000000000000000000).
+WARNING:Xst:2935 - Signal 'memproc.memory<31>', unconnected in block 'Imem', is tied to its initial value (00000000000000000000000000000000).
+    Found 32-bit register for signal <instruction>.
+    Found 32x32-bit Read Only RAM for signal <addr[6]_memproc.memory[31][31]_wide_mux_0_OUT>
+    Summary:
+	inferred   1 RAM(s).
+	inferred  32 D-type flip-flop(s).
+Unit <Imem> synthesized.
+
+Synthesizing Unit <PC>.
+    Related source file is "/home/zwakrim/Documents/computerarch/mips/PC.vhd".
+    Found 1-bit register for signal <pc_reset>.
+    Found 32-bit register for signal <pc_out>.
+    Summary:
+	inferred  33 D-type flip-flop(s).
+Unit <PC> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 1
+ 32x32-bit single-port Read Only RAM                   : 1
+# Adders/Subtractors                                   : 1
+ 32-bit adder                                          : 1
+# Registers                                            : 4
+ 1-bit register                                        : 1
+ 32-bit register                                       : 3
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+WARNING:Xst:2677 - Node <PCout_31> of sequential type is unconnected in block <pc4>.
+WARNING:Xst:2677 - Node <pc_out_31> of sequential type is unconnected in block <programcounter>.
+
+Synthesizing (advanced) Unit <Imem>.
+INFO:Xst:3231 - The small RAM <Mram_addr[6]_memproc.memory[31][31]_wide_mux_0_OUT> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 32-word x 32-bit                    |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <addr>          |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+Unit <Imem> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 1
+ 32x32-bit single-port distributed Read Only RAM       : 1
+# Adders/Subtractors                                   : 1
+ 32-bit adder                                          : 1
+# Registers                                            : 97
+ Flip-Flops                                            : 97
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1710 - FF/Latch <instruction_31> (without init value) has a constant value of 0 in block <Imem>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <instruction_30> (without init value) has a constant value of 0 in block <Imem>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <instruction_29> (without init value) has a constant value of 0 in block <Imem>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <instruction_27> (without init value) has a constant value of 0 in block <Imem>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <instruction_26> (without init value) has a constant value of 0 in block <Imem>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <instruction_25> (without init value) has a constant value of 0 in block <Imem>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <instruction_23> (without init value) has a constant value of 0 in block <Imem>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <instruction_22> (without init value) has a constant value of 0 in block <Imem>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <instruction_21> (without init value) has a constant value of 0 in block <Imem>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <instruction_19> (without init value) has a constant value of 0 in block <Imem>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <instruction_18> (without init value) has a constant value of 0 in block <Imem>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <instruction_17> (without init value) has a constant value of 0 in block <Imem>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <instruction_16> (without init value) has a constant value of 0 in block <Imem>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <instruction_15> (without init value) has a constant value of 0 in block <Imem>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <instruction_14> (without init value) has a constant value of 0 in block <Imem>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <instruction_13> (without init value) has a constant value of 0 in block <Imem>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <instruction_11> (without init value) has a constant value of 0 in block <Imem>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <instruction_10> (without init value) has a constant value of 0 in block <Imem>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <instruction_9> (without init value) has a constant value of 0 in block <Imem>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <instruction_7> (without init value) has a constant value of 0 in block <Imem>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <instruction_6> (without init value) has a constant value of 0 in block <Imem>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <instruction_5> (without init value) has a constant value of 0 in block <Imem>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <instruction_3> (without init value) has a constant value of 0 in block <Imem>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <instruction_2> (without init value) has a constant value of 0 in block <Imem>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <instruction_1> (without init value) has a constant value of 0 in block <Imem>. This FF/Latch will be trimmed during the optimization process.
+
+Optimizing unit <MIPSTopLevel> ...
+
+Optimizing unit <PCadder> ...
+
+Optimizing unit <Imem> ...
+
+Optimizing unit <PC> ...
+WARNING:Xst:2677 - Node <pc4/PCout_31> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <pc4/PCout_30> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <pc4/PCout_29> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <pc4/PCout_28> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <pc4/PCout_27> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <pc4/PCout_26> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <pc4/PCout_25> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <pc4/PCout_24> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <pc4/PCout_23> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <pc4/PCout_22> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <pc4/PCout_21> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <pc4/PCout_20> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <pc4/PCout_19> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <pc4/PCout_18> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <pc4/PCout_17> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <pc4/PCout_16> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <pc4/PCout_15> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <pc4/PCout_14> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <pc4/PCout_13> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <pc4/PCout_12> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <pc4/PCout_11> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <pc4/PCout_10> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <pc4/PCout_9> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <pc4/PCout_8> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <pc4/PCout_7> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <pc4/PCout_1> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <pc4/PCout_0> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <programcounter/pc_out_31> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <programcounter/pc_out_30> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <programcounter/pc_out_29> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <programcounter/pc_out_28> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <programcounter/pc_out_27> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <programcounter/pc_out_26> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <programcounter/pc_out_25> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <programcounter/pc_out_24> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <programcounter/pc_out_23> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <programcounter/pc_out_22> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <programcounter/pc_out_21> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <programcounter/pc_out_20> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <programcounter/pc_out_19> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <programcounter/pc_out_18> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <programcounter/pc_out_17> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <programcounter/pc_out_16> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <programcounter/pc_out_15> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <programcounter/pc_out_14> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <programcounter/pc_out_13> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <programcounter/pc_out_12> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <programcounter/pc_out_11> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <programcounter/pc_out_10> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <programcounter/pc_out_9> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <programcounter/pc_out_8> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <programcounter/pc_out_7> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <programcounter/pc_out_1> of sequential type is unconnected in block <MIPSTopLevel>.
+WARNING:Xst:2677 - Node <programcounter/pc_out_0> of sequential type is unconnected in block <MIPSTopLevel>.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block MIPSTopLevel, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 18
+ Flip-Flops                                            : 18
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : MIPSTopLevel.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 24
+#      GND                         : 1
+#      INV                         : 2
+#      LUT1                        : 4
+#      LUT2                        : 1
+#      LUT4                        : 1
+#      LUT5                        : 5
+#      MUXCY                       : 4
+#      VCC                         : 1
+#      XORCY                       : 5
+# FlipFlops/Latches                : 18
+#      FD                          : 12
+#      FDPE                        : 1
+#      FDR                         : 5
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 33
+#      IBUF                        : 1
+#      OBUF                        : 32
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx9tqg144-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:              18  out of  11440     0%  
+ Number of Slice LUTs:                   13  out of   5720     0%  
+    Number used as Logic:                13  out of   5720     0%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:     19
+   Number with an unused Flip Flop:       1  out of     19     5%  
+   Number with an unused LUT:             6  out of     19    31%  
+   Number of fully used LUT-FF pairs:    12  out of     19    63%  
+   Number of unique control sets:         3
+
+IO Utilization: 
+ Number of IOs:                          34
+ Number of bonded IOBs:                  34  out of    102    33%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 18    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 1.918ns (Maximum Frequency: 521.472MHz)
+   Minimum input arrival time before clock: 2.945ns
+   Maximum output required time after clock: 3.597ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 1.918ns (frequency: 521.472MHz)
+  Total number of paths / destination ports: 56 / 22
+-------------------------------------------------------------------------
+Delay:               1.918ns (Levels of Logic = 5)
+  Source:            programcounter/pc_out_3 (FF)
+  Destination:       pc4/PCout_6 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: programcounter/pc_out_3 to pc4/PCout_6
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              7   0.447   0.774  programcounter/pc_out_3 (programcounter/pc_out_3)
+     LUT1:I0->O            1   0.205   0.000  pc4/Madd_n0005_cy<3>_rt (pc4/Madd_n0005_cy<3>_rt)
+     MUXCY:S->O            1   0.172   0.000  pc4/Madd_n0005_cy<3> (pc4/Madd_n0005_cy<3>)
+     MUXCY:CI->O           1   0.019   0.000  pc4/Madd_n0005_cy<4> (pc4/Madd_n0005_cy<4>)
+     MUXCY:CI->O           0   0.019   0.000  pc4/Madd_n0005_cy<5> (pc4/Madd_n0005_cy<5>)
+     XORCY:CI->O           1   0.180   0.000  pc4/Madd_n0005_xor<6> (pc4/n0005<6>)
+     FD:D                      0.102          pc4/PCout_6
+    ----------------------------------------
+    Total                      1.918ns (1.144ns logic, 0.774ns route)
+                                       (59.7% logic, 40.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 2 / 2
+-------------------------------------------------------------------------
+Offset:              2.945ns (Levels of Logic = 2)
+  Source:            reset (PAD)
+  Destination:       programcounter/pc_reset (FF)
+  Destination Clock: clk rising
+
+  Data Path: reset to programcounter/pc_reset
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             2   1.222   0.616  reset_IBUF (reset_IBUF)
+     INV:I->O              1   0.206   0.579  programcounter/reset_inv1_INV_0 (programcounter/reset_inv)
+     FDPE:CE                   0.322          programcounter/pc_reset
+    ----------------------------------------
+    Total                      2.945ns (1.750ns logic, 1.195ns route)
+                                       (59.4% logic, 40.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 7 / 7
+-------------------------------------------------------------------------
+Offset:              3.597ns (Levels of Logic = 1)
+  Source:            instructions/instruction_28 (FF)
+  Destination:       instruction<28> (PAD)
+  Source Clock:      clk rising
+
+  Data Path: instructions/instruction_28 to instruction<28>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               1   0.447   0.579  instructions/instruction_28 (instructions/instruction_28)
+     OBUF:I->O                 2.571          instruction_28_OBUF (instruction<28>)
+    ----------------------------------------
+    Total                      3.597ns (3.018ns logic, 0.579ns route)
+                                       (83.9% logic, 16.1% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    1.918|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 4.00 secs
+Total CPU time to Xst completion: 4.09 secs
+ 
+--> 
+
+
+Total memory usage is 388524 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :  109 (   0 filtered)
+Number of infos    :    1 (   0 filtered)
+
