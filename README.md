@@ -21,7 +21,7 @@ The project has simulation and required files in order to upload to the FPGA.
 
 ## Built With
 
-* [ISE 14.7 Webpack](https://www.xilinx.com/) - https://www.xilinx.com/products/design-tools/ise-design-suite.html
+* [ISE 14.7 Webpack](https://www.xilinx.com/products/design-tools/ise-design-suite.html) - The IDE
 * [Spartan-6](https://www.xilinx.com/products/silicon-devices/fpga/spartan-6.html) - The FPGA
 
 ## Author
