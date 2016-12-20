@@ -1,1 +1,0 @@
-xst -intstyle ise -ifn "/home/zwakrim/Documents/computerarch/mips/MIPSTopLevel.xst" -ofn "/home/zwakrim/Documents/computerarch/mips/MIPSTopLevel.syr" 
