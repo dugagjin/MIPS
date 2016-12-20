@@ -27,23 +27,23 @@ end programCounter;
 architecture Behavioral of programCounter is
 	signal programCounterReset: STD_LOGIC;
 begin
-	programCounterSet: process(clock)
+	setProcess: process(clock)
 	begin
 		if (rising_edge(clock)) then
 			if (programCounterReset = '1') then
 				programCounterOut <= (others => '0');
 			else
-				programCounterOut <= programCounterInt;
+				programCounterOut <= programCounterIn;
 			end if;
 		end if;
-	end process programCounterSet;
-	programCounterReset: process(reset, clock)
+	end process setProcess;
+	resetProcess: process(reset, clock)
 	begin
 		if (reset = '1') then
 			programCounterReset <= '1';
 		elsif ((rising_edge(clock)) and (reset = '0')) then
 			programCounterReset <= '0';
 		end if;
-	end process resetPC;
+	end process resetProcess;
 end Behavioral;
 

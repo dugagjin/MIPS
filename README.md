@@ -1,11 +1,12 @@
 # Microprocessor without Interlocked Pipeline Stages (MIPS)
 
-VHDL implementation of a MIPS processor for Spartan-6 FPGA.
+MIPS VHDL implementation for Spartan-6 FPGA using ISE.
 
 ## Files
 
 The project has simulation and required files in order to upload to the FPGA.
 
+## VHDL code
 ### What is already implemented
 
 - Program counter
@@ -18,6 +19,18 @@ The project has simulation and required files in order to upload to the FPGA.
 - Control unit
 - Data memory
 - ALU
+- ...
+
+## Tested
+### What is already tested
+
+- ...
+
+### What has to be tested
+
+- Program counter
+- Program counter adder
+- Instruction 
 
 ## Built With
 
