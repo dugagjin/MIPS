@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2016-12-20T10:04:53</DateModified>
-  <ModuleName>instructionMemory</ModuleName>
+  <DateModified>2016-12-20T13:40:25</DateModified>
+  <ModuleName>Core</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
   <SavedFilePath>/home/dugagjin/Documents/Github/MIPS/MIPS/iseconfig/programCounter.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>/home/dugagjin/Documents/Github/MIPS/MIPS</ImplementationReportsDirectory>
-  <DateInitialized>2016-12-20T10:04:53</DateInitialized>
+  <ImplementationReportsDirectory>/home/dugagjin/Documents/Github/MIPS/MIPS/</ImplementationReportsDirectory>
+  <DateInitialized>2016-12-20T13:40:25</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>
  <body>

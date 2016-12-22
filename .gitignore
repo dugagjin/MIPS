@@ -33,4 +33,6 @@ MIPS/xst/
 *.ptwx
 *.xpi
 !LICENSE.txt
+*.xreport
+*.projectmgr
 

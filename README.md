@@ -30,7 +30,7 @@ The project has simulation and required files in order to upload to the FPGA.
 
 - Program counter
 - Program counter adder
-- Instruction 
+- Instruction memory 
 
 ## Built With
 

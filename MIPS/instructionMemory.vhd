@@ -12,29 +12,34 @@
 ----------------------------------------------------------------------------------
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
-use IEEE.STD_LOGIC_ARITH.ALL;
-use IEEE.STD_LOGIC_UNSIGNED.ALL;
+use IEEE.NUMERIC_STD.ALL;
 
 entity instructionMemory is port (
-	programCounter:	IN 	STD_LOGIC_VECTOR(31 downto 0);
+	clock:				IN 	STD_LOGIC;
+	address:			IN 	STD_LOGIC_VECTOR(31 downto 0);
 	instruction:		OUT	STD_LOGIC_VECTOR(31 downto 0)
 );
 end instructionMemory;
 
 architecture Behavioral of instructionMemory is
+	subtype word is STD_LOGIC_VECTOR(31 downto 0);
+	type memory is array(0 to 7) of word;
 begin
-	memoryProgramCounter: process(programCounter)
-		subtype word is STD_LOGIC_VECTOR(31 downto 0);
-		type memory is array(0 to 7) of word;
-		variable myMemory: memory := (
-			X"00000001", X"00000010",
-			X"00000100", X"00000100",
-			X"00010000", X"00100000",
-			X"01000000", X"10000000"
-		);
-begin
-	instruction <= myMemory(conv_integer(programCounter(31 downto 2)));
-end process memoryProgramCounter;
+	memoryProcess: process(clock)
+		variable myMemory:memory:=(others=>(others=>'0'));
+		begin
+			if (rising_edge(clock)) then
+				myMemory(0):= X"00000001"; 
+				myMemory(1):= X"00000001";
+				myMemory(2):= X"00000001";
+				myMemory(3):= X"00000001";
+				myMemory(4):= X"00000001";
+				myMemory(5):= X"00000001";
+				myMemory(6):= X"00000001";
+				myMemory(7):= X"00000001";
+				instruction <= myMemory(to_integer(unsigned(address(31 downto 2))));
+			end if;
+		end process memoryProcess;
 end Behavioral;
 
 

@@ -1,21 +1,15 @@
 ----------------------------------------------------------------------------------
--- Company: 
--- Engineer: 
+-- Company: NaN
+-- Engineer: Dugagjin Lashi
 -- 
--- Create Date:    10:43:16 12/20/2016 
--- Design Name: 
--- Module Name:    programCounterAdder - Behavioral 
--- Project Name: 
--- Target Devices: 
--- Tool versions: 
--- Description: 
+-- Create Date: 09:43:19 12/20/2016 
+-- Design Name: program counter adder
+-- Module Name: programCounterAdder - Behavioral 
+-- Project Name: MIPS
+-- Target Devices: Spartan-6
+-- Description: program counter adder
 --
--- Dependencies: 
---
--- Revision: 
--- Revision 0.01 - File Created
--- Additional Comments: 
---
+-- Dependencies: No
 ----------------------------------------------------------------------------------
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
@@ -29,8 +23,8 @@ entity programCounterAdder is port(
 end programCounterAdder;
 
 architecture Behavioral of programCounterAdder is
-
 begin
+
 	add4:process(clock)
 	begin
 		if (rising_edge(clock)) then
