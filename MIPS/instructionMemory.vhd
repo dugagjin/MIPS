@@ -42,4 +42,3 @@ begin
 		end process memoryProcess;
 end Behavioral;
 
-

@@ -45,4 +45,3 @@ begin
 		end if;
 	end process resetProcess;
 end Behavioral;
-
