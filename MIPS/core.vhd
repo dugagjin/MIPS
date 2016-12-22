@@ -15,15 +15,15 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.NUMERIC_STD.ALL;
 
-entity Core is port (
+entity core is port (
 	clock:							IN STD_LOGIC;
 	reset:							IN STD_LOGIC;
 	instruction: 					OUT STD_LOGIC_VECTOR(31 downto 0);
 	programCounterStatus: 			OUT STD_LOGIC_VECTOR(31 downto 0)
 );
-end Core;
+end core;
 
-architecture Behavioral of Core is
+architecture Behavioral of core is
 	component programCounter port (
 		clock:						IN STD_LOGIC;
 		reset: 						IN STD_LOGIC;

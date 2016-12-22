@@ -16,9 +16,9 @@ use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.NUMERIC_STD.ALL;
 
 entity programCounterAdder is port(
-		clock:					IN		STD_LOGIC;
-		programCounterIn:    IN		STD_LOGIC_VECTOR(31 downto 0);
-		programCounterOut: 	OUT 	STD_LOGIC_VECTOR(31 downto 0)
+		clock:						IN	STD_LOGIC;
+		programCounterIn:    		IN	STD_LOGIC_VECTOR(31 downto 0);
+		programCounterOut: 			OUT STD_LOGIC_VECTOR(31 downto 0)
 	);
 end programCounterAdder;
 

@@ -15,9 +15,9 @@ use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.NUMERIC_STD.ALL;
 
 entity instructionMemory is port (
-	clock:				IN 	STD_LOGIC;
-	address:			IN 	STD_LOGIC_VECTOR(31 downto 0);
-	instruction:		OUT	STD_LOGIC_VECTOR(31 downto 0)
+	clock:					IN 	STD_LOGIC;
+	address:				IN 	STD_LOGIC_VECTOR(31 downto 0);
+	instruction:			OUT	STD_LOGIC_VECTOR(31 downto 0)
 );
 end instructionMemory;
 
