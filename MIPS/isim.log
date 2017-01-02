@@ -1,0 +1,36 @@
+ISim log file
+Running: /home/dugagjin/Documents/Github/MIPS/MIPS/tb_MUX_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb /home/dugagjin/Documents/Github/MIPS/MIPS/tb_MUX_isim_beh.wdb 
+ISim P.20131013 (signature 0xfbc00daa)
+----------------------------------------------------------------------
+INFO:Security:67 - XILINXD_LICENSE_FILE is set to '/home/dugagjin/.Xilinx' in /home/dugagjin/.flexlmrc.
+INFO:Security:68 - For more information or for assistance in obtaining 
+ a license, please run the Xilinx License Configuration Manager
+       (xlcm or "Manage Xilinx Licenses".)
+INFO:Security:68a - user is dugagjin, on host unknown.
+ERROR:Security:14 - No feature was available for 'ISIM'.
+
+License server machine is down or not responding.
+ See the system adminstrator about starting the license server system, or
+ make sure you're referring to the right host (see LM_LICENSE_FILE).
+Feature:       ISIM
+Hostname:      iwt-srv-prlic
+License path:  /home/dugagjin/.Xilinx/xilinxlicense.lic:/opt/Xilinx/14.7/ISE_DS/ISE//data/*.lic:/opt/Xilinx/14.7/ISE_DS/ISE//coregen/core_licenses/Xilinx.lic:/opt/Xilinx/14.7/ISE_DS/ISE//coregen/core_licenses/XilinxFree.lic:/opt/Xilinx/14.7/ISE_DS/EDK/data/core_licenses/Xilinx.lic:
+FLEXnet Licensing error:-96,7
+For further information, refer to the FLEXnet Licensing documentation,
+available at "www.flexerasoftware.com".
+----------------------------------------------------------------------
+WARNING: A full ISim License cannot be checked out due to the issues listed above. Please use Xilinx License Configuration Manager to fix these issues in order to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+Time resolution is 1 ps
+# onerror resume
+# wave add /
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+
+** Failure:End
+User(VHDL) Code Called Simulation Stop
+In process tb_MUX.vhd:stim_proc 
+ 
+INFO: Simulator is stopped.

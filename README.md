@@ -9,28 +9,16 @@ The project has simulation and required files in order to upload to the FPGA.
 ## VHDL code
 ### What is already implemented
 
-- Program counter
-- Program counter adder
-- Instruction memory
-
-### What has to be implemented
-
-- Register
-- Control unit
-- Data memory
-- ALU
-- ...
+- MUX
 
 ## Tested
 ### What is already tested
 
-- ...
+- MUX
 
 ### What has to be tested
 
-- Program counter
-- Program counter adder
-- Instruction memory 
+Nothing at the moment
 
 ## Built With
 

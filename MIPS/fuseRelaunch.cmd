@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "secureip" -o "/home/dugagjin/Documents/Github/MIPS/MIPS/tb_MUX_isim_beh.exe" -prj "/home/dugagjin/Documents/Github/MIPS/MIPS/tb_MUX_beh.prj" "work.tb_MUX" 
