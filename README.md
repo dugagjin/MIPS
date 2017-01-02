@@ -11,6 +11,7 @@ The project has simulation and required files in order to upload to the FPGA.
 
 - Multiplexer
 - Sign extender
+- ALU
 
 ## Tested
 ### What is already tested
@@ -20,7 +21,7 @@ The project has simulation and required files in order to upload to the FPGA.
 
 ### What has to be tested
 
-Nothing at the moment
+- ALU
 
 ## Built With
 
