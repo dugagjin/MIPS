@@ -1,8 +1,13 @@
 *.html
 *.xmsgs
 MIPS/_ngo/
+*.cmd
+MIPS/isim/
+*.exe
+*.wdb
+*.ini
 *.bld
-*_log
+*.log
 *.lso
 *.ncd
 *.ngc
