@@ -4,6 +4,7 @@ MIPS/_ngo/
 *.cmd
 MIPS/isim/
 *.exe
+*.gise
 *.wdb
 *.ini
 *.bld

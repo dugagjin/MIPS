@@ -9,12 +9,14 @@ The project has simulation and required files in order to upload to the FPGA.
 ## VHDL code
 ### What is already implemented
 
-- MUX
+- Multiplexer
+- Sign extender
 
 ## Tested
 ### What is already tested
 
-- MUX
+- Multiplexer
+- Sign extender
 
 ### What has to be tested
 
