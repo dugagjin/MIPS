@@ -18,21 +18,27 @@ use IEEE.NUMERIC_STD.ALL;
 entity programCounter is port (
 	clock:					IN STD_LOGIC;
 	reset:					IN STD_LOGIC;
-	programCounterIn:		IN STD_LOGIC_VECTOR(31 downto 0);
+	programCounterIn:		IN STD_LOGIC_VECTOR(31 downto 0) := (others => '0');
 	programCounterOut: 		OUT STD_LOGIC_VECTOR(31 downto 0)
 );
 end programCounter;
 
 architecture Behavioral of programCounter is
 	signal programCounterReset: STD_LOGIC;
+	signal triggerStart: STD_LOGIC := '1';
 begin
-	setProcess: process(clock)
+	setProcess: process(clock, programCounterIn, programCounterReset)
 	begin
-		if (rising_edge(clock)) then
-			if (programCounterReset = '1') then
-				programCounterOut <= (others => '0');
-			else
-				programCounterOut <= programCounterIn;
+		if (triggerStart = '1') then
+			programCounterOut <= (others => '0');
+			triggerStart <= '0';
+		else
+			if (rising_edge(clock)) then
+				if (programCounterReset = '1') then
+					programCounterOut <= (others => '0');
+				else
+					programCounterOut <= programCounterIn;
+				end if;
 			end if;
 		end if;
 	end process setProcess;
