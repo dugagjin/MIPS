@@ -40,6 +40,6 @@ BEGIN
 		IF (memRead = '1') THEN
 			readData <= DM((to_integer(unsigned(address)) - 268500992)/4);
 		END IF;
-		-- it gives, 1, 2, 3, 4, ...
+		-- it gives, 0, 1, 2, 3, 4, ...
 	END PROCESS;
 END Behavioral;
