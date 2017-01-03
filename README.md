@@ -22,6 +22,7 @@ The project has simulation and required files in order to upload to the FPGA.
 - Sign extender
 - ALU
 - Register file
+- Instruction Memory
 
 ### What has to be tested
 
