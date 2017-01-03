@@ -3,6 +3,7 @@
 MIPS/_ngo/
 *.cmd
 MIPS/isim/
+*.cmd_log
 *.exe
 *.gise
 *.wdb

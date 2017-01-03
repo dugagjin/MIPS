@@ -16,6 +16,7 @@ The project has simulation and required files in order to upload to the FPGA.
 - Instruction Memory
 - Data memory
 - ALU controller
+- Controller
 
 ## Tested
 ### What is already tested
@@ -27,6 +28,7 @@ The project has simulation and required files in order to upload to the FPGA.
 - Instruction Memory
 - Data memory
 - ALU controller
+- Controller
 
 ### What has to be tested
 
