@@ -1,6 +1,5 @@
 LIBRARY IEEE;
 USE IEEE.STD_LOGIC_1164.ALL;
---use IEEE.NUMERIC_STD.ALL;
 ENTITY Controller IS
 	PORT (
 		opcode        : IN std_logic_vector(5 DOWNTO 0); -- instruction 31-26
