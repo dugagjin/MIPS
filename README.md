@@ -14,6 +14,7 @@ The project has simulation and required files in order to upload to the FPGA.
 - ALU
 - Register file
 - Instruction Memory
+- Data memory
 
 ## Tested
 ### What is already tested
