@@ -15,6 +15,7 @@ The project has simulation and required files in order to upload to the FPGA.
 - Register file
 - Instruction Memory
 - Data memory
+- ALU controller
 
 ## Tested
 ### What is already tested
@@ -25,6 +26,7 @@ The project has simulation and required files in order to upload to the FPGA.
 - Register file
 - Instruction Memory
 - Data memory
+- ALU controller
 
 ### What has to be tested
 
@@ -32,8 +34,10 @@ Nothing at the moment
 
 ## Built With
 
-* [ISE 14.7 Webpack](https://www.xilinx.com/products/design-tools/ise-design-suite.html) - The IDE
-* [Spartan-6](https://www.xilinx.com/products/silicon-devices/fpga/spartan-6.html) - The FPGA
+* [ISE 14.7 Webpack](https://www.xilinx.com/products/design-tools/ise-design-suite.html) - IDE
+* [Spartan-6](https://www.xilinx.com/products/silicon-devices/fpga/spartan-6.html) - FPGA
+* [MIPS Green Sheet](https://inst.eecs.berkeley.edu/~cs61c/resources/MIPS_Green_Sheet.pdf) - Reference Data
+* [MIPS](https://i.imgur.com/6R3Xz.png) - Reference architecture
 
 ## Author
 
