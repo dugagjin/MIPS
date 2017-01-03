@@ -16,7 +16,7 @@ BEGIN
 	PROCESS (a1, a2, alu_control)
 	BEGIN
 		CASE alu_control IS
-			-- Bitwise and
+				-- Bitwise and
 			WHEN "0000" =>
 				resultX <= a1 AND a2;
 				-- Bitwise or
@@ -30,17 +30,17 @@ BEGIN
 				resultX <= std_logic_vector(unsigned(a1) - unsigned(a2));
 				-- set les than
 			WHEN "0111" =>
-				IF (a1 < a2) THEN
+				IF (signed(a1) < signed(a2)) THEN
 					resultX <= x"00000001";
 				ELSE
 					resultX <= x"00000000";
 				END IF;
 				-- Bitwise nor
-			WHEN "0000" =>
+			WHEN "1100" =>
 				resultX <= a1 NOR a2;
 				-- Nop
-			WHEN other => NULL;
-			resultX <= "00000000";
+			WHEN others => NULL;
+			resultX <= x"00000000";
 		END CASE;
 	END PROCESS;
 	-- concurent code
