@@ -20,6 +20,7 @@ The project has simulation and required files in order to upload to the FPGA.
 - Multiplexer
 - Sign extender
 - ALU
+- Register file
 
 ### What has to be tested
 

@@ -27,6 +27,6 @@ BEGIN
 	-- always at the end otherwise program will break
 	ASSERT false
 	REPORT "END"
-		SEVERITY failure;
+	SEVERITY failure;
 END PROCESS;
 END;
