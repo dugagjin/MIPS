@@ -17,6 +17,8 @@ The project has simulation and required files in order to upload to the FPGA.
 - Data memory
 - ALU controller
 - Controller
+- Program counter adder
+- Program counter
 
 ## Tested
 ### What is already tested
@@ -29,6 +31,7 @@ The project has simulation and required files in order to upload to the FPGA.
 - Data memory
 - ALU controller
 - Controller
+- Program counter adder
 
 ### What has to be tested
 
