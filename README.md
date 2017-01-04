@@ -32,10 +32,12 @@ The project has simulation and required files in order to upload to the FPGA.
 - ALU controller
 - Controller
 - Program counter adder
+- Program counter
 
 ### What has to be tested
 
-Nothing at the moment
+- reset at program counter
+- check if program counter has to output per 4 byte starting from higher than 003FFFFC (hex)
 
 ## Built With
 

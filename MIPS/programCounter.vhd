@@ -10,11 +10,9 @@ ENTITY programCounter IS
 	);
 END programCounter;
 ARCHITECTURE Behavioral OF programCounter IS
-	SIGNAL address : std_logic_vector(31 DOWNTO 0) := x"00000000";
 BEGIN
 	PROCESS (clock)
 	BEGIN
-		programCounterOut <= address;
 		IF (rising_edge(clock)) THEN
 			programCounterOut <= programCounterIn;
 			-- programCounterOut <= x"00400000" OR std_logic_vector(to_unsigned(progamCounterIn * 4, 32));
