@@ -37,7 +37,7 @@ The project has simulation and required files in order to upload to the FPGA.
 ### What has to be tested
 
 - reset at program counter
-- check if program counter has to output per 4 byte starting from higher than 003FFFFC (hex)
+- check if program counter has to output per 4 bits starting from higher than 003FFFFC (hex)
 
 ## Built With
 
