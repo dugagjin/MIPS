@@ -19,6 +19,7 @@ The project has simulation and required files in order to upload to the FPGA.
 - Controller
 - Program counter adder
 - Program counter
+- Shift left
 
 ## Tested
 ### What is already tested
@@ -33,6 +34,7 @@ The project has simulation and required files in order to upload to the FPGA.
 - Controller
 - Program counter adder
 - Program counter
+- Shift left
 
 ### What has to be tested
 
