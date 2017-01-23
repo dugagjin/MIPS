@@ -1,5 +1,6 @@
-LIBRARY IEEE;
-USE IEEE.STD_LOGIC_1164.ALL;
+LIBRARY ieee;
+USE ieee.std_logic_1164.ALL;
+USE IEEE.NUMERIC_STD.ALL;
 ENTITY MIPS IS
 	PORT (
 		clk   : IN STD_LOGIC;
@@ -12,8 +13,10 @@ ARCHITECTURE Behavioral OF MIPS IS
 	SIGNAL reg2    : std_logic_vector(31 DOWNTO 0) := x"12345678";
 	SIGNAL mux_ctl : std_logic := '1';
 	SIGNAL mux_out : std_logic_vector(31 DOWNTO 0) := x"00000000";
-	SIGNAL readAdress : std_logic_vector(31 DOWNTO 0) := x"00400008";
+	SIGNAL readAdress : std_logic_vector(31 DOWNTO 0) := x"00000000";
 	SIGNAL instruction : std_logic_vector(31 DOWNTO 0) := x"00000000";
+	SIGNAL programCounterIn : std_logic_vector(31 DOWNTO 0) := x"00400000";
+	SIGNAL programCounterOut : std_logic_vector(31 DOWNTO 0) := x"00000000";
 BEGIN
 	--instantiate the ALU source mux
 	U1 : ENTITY work.Mux(Behavioral)
@@ -32,6 +35,11 @@ BEGIN
 	U3 : ENTITY work.instructionMemory(Behavioral)
 		PORT MAP(
 			readAddress => readAdress,
-			instruction => instruction
+			instruction => programCounterOut
+		);
+	U4 : ENTITY work.programCounter(Behavioral)
+		PORT MAP(
+			programCounterIn => programCounterIn,
+			programCounterOut => programCounterOut
 		);
 END Behavioral;
