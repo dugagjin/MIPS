@@ -36,7 +36,7 @@ The project has simulation and required files in order to upload to the FPGA.
 - Program counter
 - Shift left
 
-### What has to be tested
+### What has to be done
 
 - Add
 - And
